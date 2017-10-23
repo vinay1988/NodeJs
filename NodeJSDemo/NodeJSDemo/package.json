@@ -5,6 +5,10 @@
   "main": "app.js",
   "author": {
     "name": "vinay"
+  },
+  "dependencies": {
+    "express": "^4.15.4",
+    "underscore": "^1.8.3",
+    "vash": "^0.12.3"
   }
-
 }

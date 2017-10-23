@@ -28,9 +28,44 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="controllers\homeController.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="controllers\index.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="data\index.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="data\seedData.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="public\lib\underscore\underscore-min.js" />
+    <Compile Include="public\lib\underscore\underscore.js" />
     <Compile Include="server.js" />
     <Content Include="package.json" />
+    <Content Include="public\css\site.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="public\lib\underscore\.bower.json" />
+    <Content Include="public\lib\underscore\bower.json" />
+    <Content Include="public\lib\underscore\LICENSE" />
+    <Content Include="public\lib\underscore\README.md" />
+    <Content Include="public\lib\underscore\underscore-min.map" />
     <Content Include="README.md" />
+    <Content Include="Views\layout.vash" />
+    <Content Include="Views\index.vash">
+      <SubType>Code</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="controllers\" />
+    <Folder Include="data\" />
+    <Folder Include="public\" />
+    <Folder Include="public\css\" />
+    <Folder Include="public\lib\" />
+    <Folder Include="public\lib\underscore\" />
+    <Folder Include="Views\" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
